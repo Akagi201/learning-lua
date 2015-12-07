@@ -7,6 +7,7 @@
 --
 -- Refs:
 -- http://www.cnblogs.com/leezj/p/4230271.html
+-- https://coronalabs.com/blog/2014/09/02/tutorial-printing-table-contents/
 
 function print_r(t)
     local print_r_cache = {}
