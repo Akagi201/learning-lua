@@ -1,0 +1,14 @@
+diff ORIG/iolib.c ./iolib.c
+21c21
+< static FILE *in=stdin, *out=stdout;
+---
+> static FILE *in=NULL, *out=NULL;
+471a472
+>  in=stdin; out=stdout;
+diff ORIG/lua.c ./lua.c
+13c13
+< void main (int argc, char *argv[])
+---
+> int main (int argc, char *argv[])
+27a28
+>  return 0;

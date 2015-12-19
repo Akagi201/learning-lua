@@ -1,0 +1,24 @@
+To accompany the presentation of the evolution of Lua at HOPL III,
+here are all releases of Lua. Only the source code is included; for
+documentation and other files, see the original tarballs at Lua.org.
+
+The code has been slightly updated to compile and run with gcc 4. As a
+testimony to the portability of Lua, the required changes were minimal:
+just a trivial change in iolib.c before Lua 2.5. The differences between
+the original code and the updated code are in DIFFS in each directory.
+
+No attempt has been made to ensure warning-free compilations. A few,
+mostly trivial, changes would be needed for that, but it is interesting
+to see the number of warnings decrease to zero in later versions.
+
+To build each release, just go its directory and type 'make'. This will
+run a simple test for lua and luac (when available). To build and test
+all releases, just type 'make' at the top level directory.
+
+The simple Makefiles build Lua without any special options. For those,
+see the original tarballs.
+
+Lua 3.2 may crash when run if compiled with gcc 4. It runs fine in earlier gcc.
+
+Enjoy!
+-- The Lua team

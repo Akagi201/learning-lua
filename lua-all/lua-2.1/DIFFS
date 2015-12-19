@@ -1,0 +1,7 @@
+diff ORIG/iolib.c ./iolib.c
+19c19
+< static FILE *in=stdin, *out=stdout;
+---
+> static FILE *in=NULL, *out=NULL;
+600a601
+>  in=stdin; out=stdout;
